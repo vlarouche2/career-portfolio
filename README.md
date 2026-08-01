@@ -29,7 +29,9 @@ Then open http://localhost:8000 in a browser. Stop the server with `Ctrl+C`.
 4. Set branch to **main**, folder to **/ (root)**, then **Save**.
 5. GitHub will publish the site at `https://<username>.github.io/<repo>/`
    (usually ready within a minute or two — check the Pages settings page for
-   the live URL and deployment status).
+   the live URL and deployment status). This repo is named `vlarouche2.github.io`,
+   GitHub's special "user site" repo name, so it publishes to the short root URL
+   `https://vlarouche2.github.io/` instead of a `/<repo>/` subpath.
 
 ## After deploying
 
