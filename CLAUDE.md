@@ -35,12 +35,17 @@ colors, fonts, or spacing scales ad hoc — extend the existing tokens.
 | `--paper` / `--paper-2` | `#f3f7fc` / `#ffffff` | Page and card backgrounds |
 
 **Type:**
-- Display / headings and body: **Proxima Nova**, falling back to **Montserrat**
-  (400–700 weight, loaded free via Google Fonts) since Proxima Nova has no
-  free CDN source — it needs a licensed source (Adobe Fonts kit or
-  self-hosted files) to actually render. Until one is added, the site
-  renders in Montserrat.
-- Mono (eyebrows, tags, labels, stats accents): **Space Mono**
+- Single font throughout, including eyebrows/tags/labels/stats accents:
+  **Proxima Nova**, falling back to **Montserrat** (400–700 weight, loaded
+  free via Google Fonts) since Proxima Nova has no free CDN source — it
+  needs a licensed source (Adobe Fonts kit or self-hosted files) to
+  actually render. Until one is added, the site renders entirely in
+  Montserrat. `--font-mono` is an alias for the same stack (kept as a
+  separate CSS variable for the uppercase/label roles), not a distinct
+  monospace typeface — Space Mono was removed so the whole site (including
+  the LinkedIn banner) uses one consistent font family. Uppercase
+  eyebrow/label text uses tighter tracking (0.05–0.13em) than a monospace
+  face would need, since Montserrat's characters aren't fixed-width.
 
 **Layout & motifs:**
 - Max content width `1120px` (`--maxw`), `14px` corner radius (`--radius`) on cards/panels.
